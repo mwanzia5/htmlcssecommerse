@@ -5,6 +5,35 @@
     box-sizing: border-box; /* Include padding and border in element's total width and height */
 }
 
+body .poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+body .poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body .poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+body .poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+body .poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
 /* Styling the navigation bar container */
 .navbar{
     display: flex; /* Arrange children in a row using flexbox */
@@ -85,8 +114,32 @@ p{
     margin: 30px 0;
     border-radius: 30px;
     font-size: 27px;
+    transition: background 0.5s;
+}
+
+.btn:hover{
+    background: #563434;
 }
 
 .header{
     background: radial-gradient(#fff,#D8BFD8);
+}
+
+.header .row{
+    margin-top: 50px;
+}
+
+.categories{
+    margin: 70px 0;
+
+}
+
+.col-3{
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-bottom: 30px;
+}
+
+.col-3 img{
+    width: 100%;
 }
