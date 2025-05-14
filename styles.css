@@ -1,0 +1,92 @@
+/* Resetting margin and padding for all elements, and setting box-sizing for consistent sizing */
+*{
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+/* Styling the navigation bar container */
+.navbar{
+    display: flex; /* Arrange children in a row using flexbox */
+    align-items: center; /* Vertically center items */
+    padding: 20px; /* Spacing inside the navbar */
+}
+
+/* Styling the nav element (usually the list container) */
+nav{
+    flex: 1; /* Allow nav to take up remaining space */
+    text-align: right; /* Align navigation links to the right */
+}
+
+/* Remove default list styles and display list items inline for horizontal menu */
+nav ul{
+    display: inline-block; /* Makes the list inline for horizontal layout */
+    list-style-type: none; /* Remove default bullet points */
+}
+
+/* Display list items inline and add spacing between them */
+nav ul li{
+    display: inline-block; /* Show list items side by side */
+    margin:  20px; /* Space around each menu item */
+}
+
+/* Styling links */
+a{
+    text-decoration: none; /* Remove underline from links */
+    color:#555; /* Set link color */
+}
+
+/* Styling paragraph text */
+p{
+    color: #555; /* Text color for paragraphs */
+    font-size: 18px; /* Font size for paragraphs */
+}
+
+/* Container to center content and limit max width */
+.container{
+    max-width: 1300px; /* Max container width for large screens */
+    margin: auto; /* Center the container horizontally */
+    padding-left: 25px; /* Padding inside container on the left */
+    padding-right: 25px; /* Padding inside container on the right */
+}
+
+/* Row layout for flexible grid, wrapping as needed */
+.row{
+    display: flex; /* Flexbox layout for children */
+    align-items: center; /* Vertically center items inside the row */
+    flex-wrap: wrap; /* Wrap to next line on smaller screens */
+    justify-content: space-around; /* Evenly space items with space around */
+}
+
+/* Column that takes up half the container width */
+.col-2{
+    flex-basis: 50%; /* Set base width to 50% for responsive layout */
+    min-width:300px;
+
+}
+
+
+.col-2 img{
+ max-width: 100%;
+ padding:25px 0;
+}
+
+.col-2 h1{
+    font-size: 40px;
+    line-height: 40px;
+    margin: 15px 0;
+}
+
+.btn{
+    display: inline-block;
+    background: #4a3ea8;
+    color: #fff;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    font-size: 27px;
+}
+
+.header{
+    background: radial-gradient(#fff,#D8BFD8);
+}
