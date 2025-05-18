@@ -140,6 +140,30 @@ p{
     margin-bottom: 30px;
 }
 
-.col-3 img{
-    width: 100%;
+.col-3 img {
+  width: 300px; /* or your preferred fixed size */
+  height: 350px;
+  object-fit: cover; /* maintains aspect ratio and cuts off overflow if needed */
+}
+
+.small-container{
+    max-width: 1080px;
+    margin:auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+
+.col-4{
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+
+}
+
+.col-4 img {
+  width: 230px; /* or your preferred fixed size */
+  height: 350px;
+  object-fit: cover
 }
