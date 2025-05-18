@@ -58,6 +58,15 @@ nav ul li{
     display: inline-block; /* Show list items side by side */
     margin:  20px; /* Space around each menu item */
 }
+.nav ul li ::after{
+    content:'';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: width 0.3s;
+}
 
 /* Styling links */
 a{
@@ -98,6 +107,23 @@ p{
 .col-2 img{
  max-width: 100%;
  padding:25px 0;
+ 
+}
+
+.col-2 img.anim{
+    animation-delay: 2.0s;
+}
+
+.col-2{
+    opacity: 0;
+    transform: translateY(30px);
+    animation: moveup 0.5s linear forwards;
+}
+@keyframes moveup{
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
 }
 
 .col-2 h1{
@@ -159,6 +185,7 @@ p{
     padding: 10px;
     min-width: 200px;
     margin-bottom: 50px;
+    transition: transform 0.5s;
 
 }
 
@@ -166,4 +193,43 @@ p{
   width: 230px; /* or your preferred fixed size */
   height: 350px;
   object-fit: cover
+}
+
+.title{
+    text-align: center;
+    margin:0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    color:#555;
+}
+
+.title::after{
+    content: '';
+    background: #4a3ea8;
+    width:80px;
+    height: 5px;
+    border-radius:5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+h4{
+    color: #555;
+    font-weight: normal;
+
+}
+
+.col-4 p{
+    font-size: 14px;
+
+}
+
+.rating .fa{
+    color:#ff523b;
+}
+
+.col-4:hover{
+    transform: translateY(-5px);
 }
