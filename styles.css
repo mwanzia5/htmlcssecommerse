@@ -98,7 +98,7 @@ p{
 
 /* Column that takes up half the container width */
 .col-2{
-    flex-basis: 70%; /* Set base width to 50% for responsive layout */
+    flex-basis: 50%; /* Set base width to 50% for responsive layout */
     min-width:300px;
 
 }
