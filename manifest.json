@@ -3,5 +3,13 @@
     "short_name":"Obote Shop",
     "start_url":".",
     "background_color":"#fff",
-    "theme_color":"#D8BFD8"
+    "theme_color":"#D8BFD8",
+    "display":"standalone",
+    "icons":[
+        {
+            "src":"images/logoipsum-custom-logo.svg",
+            "sizes":"192x192",
+            "type":"image/svg"
+        }
+    ]
 }
