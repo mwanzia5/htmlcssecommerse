@@ -58,7 +58,7 @@ nav ul li{
     display: inline-block; /* Show list items side by side */
     margin:  20px; /* Space around each menu item */
 }
-.nav ul li ::after{
+nav ul li ::after{
     content:'';
     width: 0%;
     height: 2px;
@@ -98,7 +98,7 @@ p{
 
 /* Column that takes up half the container width */
 .col-2{
-    flex-basis: 50%; /* Set base width to 50% for responsive layout */
+    flex-basis: 70%; /* Set base width to 50% for responsive layout */
     min-width:300px;
 
 }
@@ -372,4 +372,61 @@ ul{
     background: #b5b5b5;
     height: 1px;
     margin:20px 0;
+}
+
+.Copyright{
+    text-align: center;
+}
+
+.menu-icon{
+    width:28px;
+    margin-left: 20px;
+    display: none;
+}
+
+/*---media query for menu --*/
+
+@media only screen and (max-width:800px){
+    nav ul{
+        position: absolute;
+        top:70px;
+        left:0;
+        background: #333;
+        width:100%;
+        overflow: hidden;
+        transition: max-height 0.5s;
+    }
+    nav ul li {
+        display: block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+
+    }
+    nav ul li{
+        display: block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    nav ul li a{
+        color: #fff;
+    }
+    .menu-icon{
+        display: block;
+        cursor: pointer;
+    }
+}
+
+
+/*---media query for less than 600 screen size --*/
+@media only screen and (max-width:600px){
+
+    .row{
+   text-align: center;
+}
+.col-2, .col-3, .col-4{
+    flex-basis: 100%;
+}
+
 }
