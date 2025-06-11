@@ -2,5 +2,6 @@
     "name":"Obote Shop",
     "short_name":"Obote Shop",
     "start_url":".",
-    "theme_color":"radial-gradient(#D8BFD8)"
+    "background_color":"#fff",
+    "theme_color":"#D8BFD8"
 }
