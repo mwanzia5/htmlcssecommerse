@@ -391,7 +391,7 @@ ul{
         position: absolute;
         top:70px;
         left:0;
-        background: #333;
+        background: #800080;
         width:100%;
         overflow: hidden;
         transition: max-height 0.5s;
