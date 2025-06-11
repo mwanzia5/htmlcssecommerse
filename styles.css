@@ -248,3 +248,65 @@ small{
     color: #555;
     font-size: medium;
 }
+
+
+/*------testimonial-----*/
+
+.testimonial{
+    padding-top:100px;
+}
+
+.testimonial .col-3{
+    text-align: center;
+    padding:40px 20px;
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+    cursor:pointer;
+    transition: transform 0.5s;
+}
+.testimonial .col-3 img {
+  width: 40px;        /* Adjust size as needed */
+  height: 40px;       /* Maintain aspect ratio or fix size */
+  margin-top: 6px;    /* Keep or adjust based on spacing */
+  border-radius: 50%; /* Makes it perfectly round if the image is square */
+}
+
+.testimonial .col-3:hover{
+    transform: translateY(-10px);
+}
+.fa.fa-quote-left{
+    font-size: 34px;
+    color: #ff523b;
+}
+
+.col-3 p {
+    font-size: 12px;
+    margin:12px 0;
+    color:#777;
+
+}
+
+.testimonial .col-3 h3{
+    font-weight: 600;
+    color:#555;
+    font-size: 16px;
+}
+
+/*-----brands-----*/
+
+.brands{
+    margin: 100px auto;
+}
+
+.col-5{
+    width:160px;
+}
+
+.col-5 img{
+    width: 100%;
+    cursor: pointer;
+    filter:grayscale(100%)
+}
+
+.col-5 img:hover{
+    filter:grayscale(0%)
+}
